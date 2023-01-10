@@ -1,0 +1,50 @@
+
+
+$assetPath: "./images/";
+$logo-img: '#{$assetPath}jelly1.PNG';
+$b: 1.5em; // border-width
+$blur: blur(9px);
+$rect: inset(0);
+
+.box {
+	display: grid;
+	place-content: center;
+	position: relative;
+	border: solid $b rgba(#000, .03);
+	padding: 0 1em;
+	height: 50vmin;
+	max-width: 13em; max-height: 7em;
+	box-shadow: 2px 2px 5px rgba(#000, .2), 
+							2px 2px 17px rgba(#000, .35), 
+							2px 2px 25px rgba(#000, .5);
+	background: url(#{$logo-img}) 50%/ cover 
+								border-box /* background-origin */
+								padding-box /* background-clip */;
+	color: #fff;
+	font: 600 3em/ 1.25 segoe script, comic sans ms, cursive;
+	text-align: center;
+	text-shadow: 1px 1px #000;
+	
+	&:before {
+		position: absolute;
+		z-index: -1; /* put it *behind* parent */
+		/* go outside padding-box by 
+		 * a border-width ($b) in every direction */
+		top: -$b; right: -$b; bottom: -$b; left: -$b;
+		border: inherit;
+		border-color: transparent;
+		background: inherit;
+		background-clip: border-box;
+		/* -webkit-prefixed version 
+		 * still needed for 
+		 * some mobile browsers 💔😭 */
+		-webkit-filter: $blur;
+						filter: $blur;
+		/* -webkit-prefixed version 
+		 * still needed for 
+		 * some mobile browsers 💔😭 */
+		-webkit-clip-path: $rect;
+						clip-path: $rect;
+		content: ''
+	}
+}
