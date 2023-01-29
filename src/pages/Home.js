@@ -1,5 +1,4 @@
-import jelly from '../images/jelly1.PNG';
-import spice from '../images/spice.PNG';
+
 import portrait from '../images/portait.jpg';
 import '../style2.scss';
 
@@ -7,7 +6,7 @@ import '../style2.scss';
 
 export default function Home(){
     return <div className = "shop">
-<div id = "header"><h1></h1></div>
+<div id = "header"></div>
     <div class="card">
         <img src={portrait} alt=""/>
             <div class="innerCard1">
@@ -60,11 +59,11 @@ export default function Home(){
     <div id = "linkbox">
         Links:
         <div class="innerCard2">
-        <a href="https://github.com/natewerm2000"target="_blank"><h1><b>Github</b></h1> 
+        <a href="https://github.com/natewerm2000"target="_blank"rel="noreferrer"><h1><b>Github</b></h1> 
             </a>
-            <a href="https://www.linkedin.com/in/nathaniel-alexander-934188196/"target="_blank"><h1><b>LinkedIn</b></h1> 
+            <a href="https://www.linkedin.com/in/nathaniel-alexander-934188196/"target="_blank"rel="noreferrer"><h1><b>LinkedIn</b></h1> 
             </a>
-            <a href="https://www.youtube.com/watch?v=gXRVlogzmfA"target="_blank"><h1><b>Galactic Conquest DEMO</b></h1> 
+            <a href="https://www.youtube.com/watch?v=gXRVlogzmfA"target="_blank"rel="noreferrer"><h1><b>Galactic Conquest DEMO</b></h1> 
             </a>
             <div id = "space"></div>
             </div>

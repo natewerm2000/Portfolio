@@ -26,7 +26,7 @@ export default function Navbar(){
             
         <div class="container">
             
-            <a href={Pdf} target = "_blank">
+            <a href={Pdf} target = "_blank"rel="noreferrer">
             <button class="button">
 	                    Resume
 	                
