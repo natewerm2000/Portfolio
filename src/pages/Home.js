@@ -29,7 +29,7 @@ export default function Home(){
             <div class="innerCard1">
             <h4><b>Skills</b></h4> 
             <p><b>Proficient in:</b></p>
-            <p>Java, Python, JavaScript, MySQL, JQuery, HTML5, CSS3</p>
+            <p>Java, Python, JavaScript, MySQL, JQuery, HTML5, CSS3, PHP</p>
             <p><b>Competent in:</b></p>
             <p>Vue.js, React.js, MongoDB, C++</p>
             <div id = "space"></div>
