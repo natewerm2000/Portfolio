@@ -1,21 +1,64 @@
-// import Style.css
-import '../style.css';
+import { useState } from 'react';
+import { send } from 'emailjs-com';
 
-
-export default function Contact() {
-    return <form>
-        <label htmlFor="name">Name</label>
-        <input type="text" id="name" name="name" />
-
-        <label htmlFor="email">Email</label>
-        <input type="email" id="email" name="email" />
-
-        <label htmlFor="subject">Subject</label>
-        <input id="subject" name="subject" />
-
-        <label htmlFor="message">Message</label>
-        <textarea id="message" name="message" />
-
-        <button type="submit">Send</button>
-    </form>
-}
+function Contact() {
+    const [toSend, setToSend] = useState({
+      from_name: '',
+      to_name: 'Nathaniel Alexander',
+      message: '',
+      reply_to: '',
+    });
+  
+    const onSubmit = (e) => {
+        e.preventDefault();
+        
+        send(
+          'service_llkczmk',
+          'template_04zjvwt',
+          toSend,
+          'Kj3gwoIQ9BaTn38SJ'
+        )
+          .then((response) => {
+            console.log('SUCCESS!', response.status, response.text);
+            alert("Email Successfully sent to host!")
+          })
+          .catch((err) => {
+            console.log('FAILED...', err);
+          });
+      };
+    
+    const handleChange = (e) => {
+      setToSend({ ...toSend, [e.target.name]: e.target.value });
+    };
+  
+    return (
+      <div className='Contact'>
+        <form onSubmit={onSubmit}>
+  <input
+    type='text'
+    name='from_name'
+    placeholder='Name'
+    value={toSend.from_name}
+    onChange={handleChange}
+  />
+  
+  <input
+    type='text'
+    name='message'
+    placeholder='Your message'
+    value={toSend.message}
+    onChange={handleChange}
+  />
+  <input
+    type='text'
+    name='reply_to'
+    placeholder='Your email'
+    value={toSend.reply_to}
+    onChange={handleChange}
+  />
+  <button type='submit'>Submit</button>
+</form>
+      </div>
+    );
+  }
+  export default Contact;
