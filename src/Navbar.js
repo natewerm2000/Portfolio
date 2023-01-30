@@ -8,13 +8,13 @@ import Pdf from "./images/resume.pdf";
 export default function Navbar(){
     return <nav className = "nav">
         
-        <div class="container">
+        <div className="container">
             
             <a href="/home">
-            <button class="button">
+            <button className="button">
 	                    Nathaniel Alexander
-	                <div class="button__horizontal"></div>
-	            <div class="button__vertical"></div>
+	                <div className="button__horizontal"></div>
+	            <div className="button__vertical"></div>
             </button> 
             </a>
             <div id = "space"></div>
@@ -24,25 +24,25 @@ export default function Navbar(){
             
             
             
-        <div class="container">
+        <div className="container">
             
             <a href={Pdf} target = "_blank"rel="noreferrer">
-            <button class="button">
+            <button className="button">
 	                    Resume
 	                
-	            <div class="button__vertical"></div>
+	            <div className="button__vertical"></div>
             </button> 
             </a>
             <div id = "space"></div>
         </div>
-        <div class="container">
+        <div className="container">
             
             <a href="/contact">
                 
-            <button class="button">
+            <button className="button">
 	                    Contact
 	                
-	            <div class="button__vertical"></div>
+	            <div className="button__vertical"></div>
             </button> 
             </a>
             <div id = "space"></div>

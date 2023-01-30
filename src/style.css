@@ -76,14 +76,13 @@ form {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #232B2B;
-    color: #DC3D24;
+    
+    background: #e55743;
+    color: #232B2B;
     padding: 1rem;
     border-radius: 1rem;
     flex-direction: column;
     gap: 1rem;
-    background: #232B2B;
-    color: #DC3D24;
     padding: 1rem;
     border-radius: 1rem;
     display: flex;
@@ -92,38 +91,29 @@ form {
 
 form input{
     padding: .5rem;
-    font-size: 1rem;
+    font-size: 2rem;
     border-radius: .5rem;
     border: none;
     outline: none;
 }
 
-form label{
-    padding: .5rem;
-    font-size: 1rem;
-    border-radius: .5rem;
-    border: none;
-    outline: none;
-}
+
 
 form button{
     padding: .5rem;
-    font-size: 1rem;
+    font-size: 3rem;
     border-radius: .5rem;
     border: none;
     outline: none;
-    background: #DC3D24;
-    color: #232B2B;
+    background:whitesmoke;
+    color: #e55743;
     cursor: pointer;
 }
+form button:hover{
+    background-color: #232B2B;
 
-form textarea{
-    padding: .5rem;
-    font-size: 1rem;
-    border-radius: .5rem;
-    border: none;
-    outline: none;
 }
+
 #header{
     font-size:24px;
     text-align: center;

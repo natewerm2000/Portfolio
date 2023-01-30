@@ -7,15 +7,15 @@ import '../style2.scss';
 export default function Home(){
     return <div className = "shop">
 <div id = "header"></div>
-    <div class="card">
+    <div className="card">
         <img src={portrait} alt=""/>
-            <div class="innerCard1">
+            <div className="innerCard1">
             <h1><b>Nathaniel Alexander</b></h1> 
             <p>Software Developer</p>
             <p>Web Developer</p>
             <div id = "space"></div>
             </div>
-            <div class="innerCard1">
+            <div className="innerCard1">
             <h4>Education</h4> 
             <p><b>Dutchess Community College:</b></p>
             <p>2018 - 2020</p>
@@ -25,7 +25,7 @@ export default function Home(){
             <p>Bachelor's in Computer Science</p>
             <div id = "space"></div>
             </div>
-            <div class="innerCard1">
+            <div className="innerCard1">
             <h4><b>Skills</b></h4> 
             <p><b>Proficient in:</b></p>
             <p>Java, Python, JavaScript, MySQL, JQuery, HTML5, CSS3, PHP</p>
@@ -33,14 +33,14 @@ export default function Home(){
             <p>Vue.js, React.js, MongoDB, C++</p>
             <div id = "space"></div>
             </div>
-            <div class="innerCard1">
+            <div className="innerCard1">
             <h4><b>Projects</b></h4> 
             <p>Smart Library</p>
             <p>Universal Fitness</p>
             <p>Galactic Conquest</p>
             <div id = "space"></div>
             </div>
-            <div class="innerCard1">
+            <div className="innerCard1">
             <h4><b>Work Experience</b></h4> 
             <p><b>Just A Buck:</b></p>
             <p>Cashier</p>
@@ -58,7 +58,7 @@ export default function Home(){
     </div>
     <div id = "linkbox">
         Links:
-        <div class="innerCard2">
+        <div className="innerCard2">
         <a href="https://github.com/natewerm2000"target="_blank"rel="noreferrer"><h1><b>Github</b></h1> 
             </a>
             <a href="https://www.linkedin.com/in/nathaniel-alexander-934188196/"target="_blank"rel="noreferrer"><h1><b>LinkedIn</b></h1> 
