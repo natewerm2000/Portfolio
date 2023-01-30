@@ -38,6 +38,7 @@ export default function Navbar(){
         <div class="container">
             
             <a href="/contact">
+                
             <button class="button">
 	                    Contact
 	                
