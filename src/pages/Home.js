@@ -38,6 +38,7 @@ export default function Home(){
             <p>Smart Library</p>
             <p>Universal Fitness</p>
             <p>Galactic Conquest</p>
+            <p>Personal Portfolio</p>
             <div id = "space"></div>
             </div>
             <div className="innerCard1">

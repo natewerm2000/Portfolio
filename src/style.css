@@ -61,6 +61,7 @@ body{
     display: flex;
     align-items: center;
     padding: .25rem;
+    
 }
 
 .nav li.active{
@@ -88,7 +89,19 @@ form {
     display: flex;
     
 }
-
+.success{
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #232B2B;
+    padding: 1rem;
+    border-radius: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+    display: flex;
+}
 form input{
     padding: .5rem;
     font-size: 2rem;

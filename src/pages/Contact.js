@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { send } from 'emailjs-com';
+import * as ReactDOM from 'react-dom';
 
 function Contact() {
     const [toSend, setToSend] = useState({
@@ -20,8 +21,8 @@ function Contact() {
         )
           .then((response) => {
             console.log('SUCCESS!', response.status, response.text);
-            alert("Email Successfully sent to host!")
-          })
+            
+            ReactDOM.render(<p>Message successfully sent to user, thank you for contacting us and expect a response shortly.</p>, document.getElementById("success"))   })
           .catch((err) => {
             console.log('FAILED...', err);
           });
@@ -58,7 +59,12 @@ function Contact() {
   />
   <button type='submit'>Submit</button>
 </form>
+<div id = "success">
+
+</div>
       </div>
+      
     );
   }
+  
   export default Contact;
