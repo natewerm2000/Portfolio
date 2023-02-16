@@ -167,16 +167,10 @@ form button:hover{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
 }
-.card img {
-    float:left;
-    margin-left: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
-    transition: 0.3s;
-    width: 30%;
-    align-items: stretch;
-    border-radius: 50%;
-
-} 
+h1{
+    text-align: center;
+    font-size: 45px;
+}
 
 #space{
     padding: 20px 30px;

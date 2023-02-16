@@ -1,6 +1,7 @@
 import Navbar from "./Navbar";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
+import './style2.scss';
 
 
 

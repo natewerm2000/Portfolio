@@ -1,62 +1,48 @@
-
-import portrait from '../images/portait.jpg';
-import '../style2.scss';
-
-
+import Portrait from "./Subpages/Portrait/Portrait"
+import Education from "./Subpages/Education/Education"
+import Projects from "./Subpages/Projects/Projects"
+import np from "./Subpages/Education/np.jpg"
+import dcc from "./Subpages/Education/dcc.png"
+import galactic from "./Subpages/Projects/galactic.jpg"
+import cam from "./Subpages/Projects/cam.jpg"
+import fitness from "./Subpages/Projects/fitness.png"
 
 export default function Home(){
-    return <div className = "shop">
-<div id = "header"></div>
-    <div className="card">
-        <img src={portrait} alt=""/>
-            <div className="innerCard1">
-            <h1><b>Nathaniel Alexander</b></h1> 
-            <p>Software Developer</p>
-            <p>Web Developer</p>
-            <div id = "space"></div>
-            </div>
-            <div className="innerCard1">
-            <h4>Education</h4> 
-            <p><b>Dutchess Community College:</b></p>
-            <p>2018 - 2020</p>
-            <p>Associate of Science: Computer Science</p>
-            <p><b>State University of New York, New Paltz:</b></p>
-            <p>2020 - 2022</p>
-            <p>Bachelor's in Computer Science</p>
-            <div id = "space"></div>
-            </div>
-            <div className="innerCard1">
-            <h4><b>Skills</b></h4> 
-            <p><b>Proficient in:</b></p>
-            <p>Java, Python, JavaScript, MySQL, JQuery, HTML5, CSS3, PHP</p>
-            <p><b>Competent in:</b></p>
-            <p>Vue.js, React.js, MongoDB, C++</p>
-            <div id = "space"></div>
-            </div>
-            <div className="innerCard1">
-            <h4><b>Projects</b></h4> 
-            <p>Smart Library</p>
-            <p>Universal Fitness</p>
-            <p>Galactic Conquest</p>
-            <p>Personal Portfolio</p>
-            <div id = "space"></div>
-            </div>
-            <div className="innerCard1">
-            <h4><b>Work Experience</b></h4> 
-            <p><b>Just A Buck:</b></p>
-            <p>Cashier</p>
-            <p>2018-2021</p>
-            <p><b>Just A Buck:</b></p>
-            <p>Key Holder</p>
-            <p>2021-Present</p>
-            <p><b>Joann Fabric:</b></p>
-            <p>Key Holder</p>
-            <p>2022-Present</p>
-            <div id = "space"></div>
-            </div>
-            <div id = "space"></div>
+    return <div>
+        <Portrait />
+        <Education
+        img = {np} 
+        school = "SUNY New Paltz"
+        year = "2021 - 2022"
+        deg = "Bachelor's in Science: Computer Science"
+        gpa = "3.67 GPA"/>
+        <Education
+        img = {dcc} 
+        school = "Dutchess Community College"
+        year = "2018 - 2020"
+        deg = "Associate's in Science: Computer Science"
+        gpa = "3.4 GPA"/>
+        <h1>Projects</h1>
+        <Projects 
+        srcLink = "https://github.com/zangaran1/GalacticConquestProject"
+        img = {galactic} 
+        name = "Galactic Conquest"
+        comp = "Unreal Engine 4, Blueprints/C++, Blender"
+        desc = "Third Person Shooter, Waved based survival"/>
+        <Projects 
+        srcLink = "https://docs.google.com/presentation/d/1xH4ANnITBwhVfJL67de5hD4MwMIRGlsX/edit?usp=sharing&ouid=111152142329312447306&rtpof=true&sd=true"
+        img = {cam} 
+        name = "SUNY New Paltz Traffic Camera"
+        comp = "HTML, CSS, PHP, JS, MySQL,"
+        desc = "People counting camera data and interface for library staff and students"/>
+        <Projects 
+        srcLink = "https://github.com/natewerm2000/ExerciseApp"
+        img = {fitness} 
+        name = "Universal Fitness"
+        comp = "HTML, CSS, JS, Bulma, Vue.js, MongoDB"
+        desc = "Fitness App, users can login, upload workouts, post on feed, view feed of other friends and add friends"/>
         
-    </div>
+  
     <div id = "linkbox">
         Links:
         <div className="innerCard2">
