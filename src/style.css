@@ -7,6 +7,7 @@
 body{
     margin:0;
     place-items: center;
+    margin-bottom: 400px;
 }
 .boxTitle{
   text-decoration: none;
@@ -89,7 +90,9 @@ form {
     display: flex;
     
 }
-
+.content-container {
+    min-height: calc(100vh - 34px);
+  }
 .success{
     position: absolute;
     text-align: center;

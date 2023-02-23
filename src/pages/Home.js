@@ -7,9 +7,11 @@ import galactic from "./Subpages/Projects/galactic.jpg"
 import cam from "./Subpages/Projects/cam.jpg"
 import fitness from "./Subpages/Projects/fitness.png"
 import Social from "./Subpages/Social/Social"
+import "./Footer/Footer.css"
 
 export default function Home(){
     return <div>
+        
         <Portrait />
         <Social />
         <h1>Education</h1>
@@ -46,20 +48,10 @@ export default function Home(){
         desc = "Fitness App, users can login, upload workouts, post on feed, view feed of other friends and add friends"/>
         
   
-    <div id = "linkbox">
-    <h1>Links:</h1>
-        <div className="innerCard2">
-        <a href="https://github.com/natewerm2000"target="_blank"rel="noreferrer"><h1><b>Github</b></h1> 
-            </a>
-            <a href="https://www.linkedin.com/in/nathaniel-alexander-934188196/"target="_blank"rel="noreferrer"><h1><b>LinkedIn</b></h1> 
-            </a>
-            <a href="https://www.youtube.com/watch?v=gXRVlogzmfA"target="_blank"rel="noreferrer"><h1><b>Galactic Conquest DEMO</b></h1> 
-            </a>
-            <div id = "space"></div>
-            </div>
-    </div>
+    
 
     
-    
-</div>
+    </div>
+
+
 }
