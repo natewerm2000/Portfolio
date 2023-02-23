@@ -6,10 +6,13 @@ import dcc from "./Subpages/Education/dcc.png"
 import galactic from "./Subpages/Projects/galactic.jpg"
 import cam from "./Subpages/Projects/cam.jpg"
 import fitness from "./Subpages/Projects/fitness.png"
+import Social from "./Subpages/Social/Social"
 
 export default function Home(){
     return <div>
         <Portrait />
+        <Social />
+        <h1>Education</h1>
         <Education
         img = {np} 
         school = "SUNY New Paltz"
@@ -44,7 +47,7 @@ export default function Home(){
         
   
     <div id = "linkbox">
-        Links:
+    <h1>Links:</h1>
         <div className="innerCard2">
         <a href="https://github.com/natewerm2000"target="_blank"rel="noreferrer"><h1><b>Github</b></h1> 
             </a>

@@ -1,19 +1,13 @@
-body{
-    
-    margin: 0;
-    padding: 0;
+
+  .box{
+    margin-top: 60px;
+    margin-bottom: 60px;
     display: flex;
     justify-content:center;
     align-items: center;
-    min-height: 100vh;
+    
     font-family: sans-serif;
-  }
-  .box{
-    margin-top: 60px;
-    width: 1200px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-gap: 15px;
+    
   }
   .card1{
     
@@ -98,3 +92,4 @@ body{
   display: block;
   margin-top: 5px;
    } 
+   

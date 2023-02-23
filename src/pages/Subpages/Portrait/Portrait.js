@@ -12,7 +12,9 @@ export default function Portrait(){
         <div className="details">
             <h2>Nathaniel Alexander<span>Web Developer</span></h2>
         </div>
+        
       </div>
+      
     </div>
     )
 }
