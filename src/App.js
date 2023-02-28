@@ -1,5 +1,5 @@
 import Navbar from "./Navbar";
-import Contact from "./pages/Contact";
+//import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import './style2.scss';
 import Footer from "./pages/Footer/Footer";
@@ -14,9 +14,7 @@ function App() {
     case "/":
       Component = Home
       break
-    case "/contact":
-        Component = Contact
-        break
+    
     default:
       Component = Home
       break

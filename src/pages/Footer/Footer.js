@@ -1,5 +1,8 @@
 import React from "react";
 import "./Footer.css"
+import {  FaGithub, FaLinkedin } from 'react-icons/fa';
+import logo from "./logo.png"
+//import { FaCode } from 'react-icons/fa';
 import {
   Box,
   Container,
@@ -13,60 +16,43 @@ const Footer = () => {
   return (
     <footer className="footer--pin">
     <Box>
+
       <h1 style={{ color: "white", 
                    textAlign: "center", 
-                   marginTop: "-50px" }}>
-        Nate
+                   marginTop: "-50px",
+                   }}>
+
+            <FooterLink href="/home">
+              <img className = "footLogo" src = {logo} alt = ""/>
+            </FooterLink>
       </h1>
+
       <Container>
+
         <Row>
-          <Column>
-            <Heading>About Us</Heading>
-            <FooterLink href="#">Aim</FooterLink>
-            <FooterLink href="#">Vision</FooterLink>
-            <FooterLink href="#">Testimonials</FooterLink>
-          </Column>
-          <Column>
-            <Heading>Services</Heading>
 
+          <Column>
+            
+            <FooterLink href="https://www.linkedin.com/in/nathaniel-alexander-934188196/">
+            <FaLinkedin color =  "white" size = "57px"/>
+            </FooterLink>
           </Column>
           <Column>
-            <Heading>Contact Us</Heading>
+            
+          </Column>
+          <Column>
+            
+          </Column>
+          <Column>
+            <FooterLink href="https://github.com/natewerm2000">
+            <FaGithub color =  "white" size = "57px"/>
+            </FooterLink>
+          </Column>
 
-          </Column>
-          <Column>
-            <Heading>Social Media</Heading>
-            <FooterLink href="#">
-              <i className="fab fa-facebook-f">
-                <span style={{ marginLeft: "10px" }}>
-                  Facebook
-                </span>
-              </i>
-            </FooterLink>
-            <FooterLink href="#">
-              <i className="fab fa-instagram">
-                <span style={{ marginLeft: "10px" }}>
-                  Instagram
-                </span>
-              </i>
-            </FooterLink>
-            <FooterLink href="#">
-              <i className="fab fa-twitter">
-                <span style={{ marginLeft: "10px" }}>
-                  Twitter
-                </span>
-              </i>
-            </FooterLink>
-            <FooterLink href="#">
-              <i className="fab fa-youtube">
-                <span style={{ marginLeft: "10px" }}>
-                  Youtube
-                </span>
-              </i>
-            </FooterLink>
-          </Column>
         </Row>
+        
       </Container>
+
     </Box>
     </footer>
   );

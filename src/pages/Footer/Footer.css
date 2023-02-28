@@ -6,3 +6,11 @@
   .content-container {
   min-height: calc(100vh - 34px);
 }
+
+.footLogo{
+  width: 72px;
+  border-style: solid;
+  border-color:black;
+  border-radius:50%;
+  
+}

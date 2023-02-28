@@ -6,14 +6,14 @@ import dcc from "./Subpages/Education/dcc.png"
 import galactic from "./Subpages/Projects/galactic.jpg"
 import cam from "./Subpages/Projects/cam.jpg"
 import fitness from "./Subpages/Projects/fitness.png"
-import Social from "./Subpages/Social/Social"
+//import Social from "./Subpages/Social/Social"
 import "./Footer/Footer.css"
 
 export default function Home(){
     return <div>
         
         <Portrait />
-        <Social />
+        
         <h1>Education</h1>
         <Education
         img = {np} 

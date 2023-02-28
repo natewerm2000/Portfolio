@@ -35,18 +35,7 @@ export default function Navbar(){
             </a>
             <div id = "space"></div>
         </div>
-        <div className="container">
-            
-            <a href="/contact">
-                
-            <button className="button">
-	                    Contact
-	                
-	            <div className="button__vertical"></div>
-            </button> 
-            </a>
-            <div id = "space"></div>
-        </div>
+        
         </ul>
     </nav>
 }
