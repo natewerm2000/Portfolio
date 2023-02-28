@@ -9,7 +9,9 @@ export default function Projects(props){
         <CRow>
             <CCol sm={6}>
                 <CCard>
+                    
                     <CCardBody>
+                        
                     <a href={props.srcLink}>
                         <CCardImage src= {props.img} />
                         </a>
@@ -20,6 +22,14 @@ export default function Projects(props){
                             <CCardText>
                                 {props.desc}
                             </CCardText>
+                            <CCardText>
+                                <a href={props.info}>
+                                More Info:
+                                </a>
+                                
+                            </CCardText>
+                            
+                            
                     </CCardBody>
                 </CCard>
             </CCol>

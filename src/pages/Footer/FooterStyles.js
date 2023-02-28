@@ -2,7 +2,9 @@ import styled from 'styled-components';
    
 export const Box = styled.div`
   padding: 80px 60px;
-  background:  #ff0000;
+  background:  white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,1);
+  transition: 0.3s;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -26,7 +28,7 @@ export const Column = styled.div`
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin-left: 60px;
+  margin-left: 90px;
 `;
    
 export const Row = styled.div`

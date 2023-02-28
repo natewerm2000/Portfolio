@@ -9,7 +9,7 @@ import {
   Row,
   Column,
   FooterLink,
-  Heading,
+  
 } from "./FooterStyles";
   
 const Footer = () => {
@@ -34,7 +34,7 @@ const Footer = () => {
           <Column>
             
             <FooterLink href="https://www.linkedin.com/in/nathaniel-alexander-934188196/">
-            <FaLinkedin color =  "white" size = "57px"/>
+            <FaLinkedin color =  "#ff0000" size = "57px" width = "100%"/>
             </FooterLink>
           </Column>
           <Column>
@@ -45,9 +45,11 @@ const Footer = () => {
           </Column>
           <Column>
             <FooterLink href="https://github.com/natewerm2000">
-            <FaGithub color =  "white" size = "57px"/>
+            <FaGithub color =  "#ff0000" size = "57px"/>
             </FooterLink>
+            
           </Column>
+          
 
         </Row>
         
