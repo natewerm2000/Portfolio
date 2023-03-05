@@ -1,8 +1,16 @@
 
 import { CCard, CCardBody, CCardImage, CCardText, CRow, CCol,CCardTitle } from '@coreui/react';
-
+import React, { useState } from "react";
+import ReactCardFlip from "react-card-flip";
+import YoutubeEmbed from '../Youtube/YoutubeEmbed';
 import "./Projects.css"
+
 export default function Projects(props){
+    const [flip, setFlip] = useState(false);
+     
+    if(props.vid === 1){
+        var video = <YoutubeEmbed embedId={props.linkVid} />
+    }
     return (
         <div>
             
@@ -12,22 +20,60 @@ export default function Projects(props){
                     
                     <CCardBody>
                         
-                    <a href={props.srcLink}>
+                    <ReactCardFlip isFlipped={flip} 
+            flipDirection="vertical">
+            <div style={{
+                minHeight:'600px',
+                fontSize: '40px',
+                margin: '20px',
+                borderRadius: '4px',
+                textAlign: 'center',
+                padding: '20px'
+            }}>
+                <CCardTitle>
+                {props.name}
+                </CCardTitle>
+                <a href={props.srcLink}>
                         <CCardImage src= {props.img} />
                         </a>
-                        <CCardTitle>{props.name}</CCardTitle>
-                            <CCardText>
+                        <CCardText>
                                 {props.comp}
                             </CCardText>
                             <CCardText>
                                 {props.desc}
                             </CCardText>
-                            <CCardText>
-                                <a href={props.info}>
-                                More Info:
-                                </a>
-                                
-                            </CCardText>
+                <button style={{
+                    width: '150px',
+                    padding: '10px',
+                    fontSize: '20px',
+                    fontWeight: 'bold',
+                    borderRadius: '5px'
+                }} onClick={() => setFlip(!flip)}>
+                    More Info</button>
+            </div>
+            <div style={{
+                minHeight:'600px',
+                fontSize: '40px',
+                margin: '20px',
+                borderRadius: '4px',
+                textAlign: 'center',
+                padding: '20px'
+            }}>
+                <CCardTitle>
+                {props.name}
+                </CCardTitle>
+                <CCardText>
+               {video}              </CCardText>
+                <button style={{
+                    width: '150px',
+                    padding: '10px',
+                    fontSize: '20px',
+                    fontWeight: 'bold',
+                    borderRadius: '5px'
+                }} onClick={() => setFlip(!flip)}>
+                    Less Info</button>
+            </div>
+        </ReactCardFlip>
                             
                             
                     </CCardBody>

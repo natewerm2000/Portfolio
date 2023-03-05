@@ -1,7 +1,6 @@
 
 import { CCard, CCardBody, CCardImage, CCardText, CRow, CCol,CCardTitle } from '@coreui/react';
 
-import "./Projects.css"
 export default function Projects(props){
     return (
         <div>
@@ -22,12 +21,7 @@ export default function Projects(props){
                             <CCardText>
                                 {props.desc}
                             </CCardText>
-                            <CCardText>
-                                <a href={props.info}>
-                                More Info:
-                                </a>
-                                
-                            </CCardText>
+                            
                             
                             
                     </CCardBody>

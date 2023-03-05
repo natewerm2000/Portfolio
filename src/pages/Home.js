@@ -36,6 +36,8 @@ export default function Home(){
         name = "Galactic Conquest"
         comp = "Unreal Engine 4, Blueprints/C++, Blender"
         desc = "Third Person Shooter, Waved based survival"
+        linkVid = "gXRVlogzmfA"
+        vid = {1}
         />
         <Projects 
         srcLink = "https://docs.google.com/presentation/d/1xH4ANnITBwhVfJL67de5hD4MwMIRGlsX/edit?usp=sharing&ouid=111152142329312447306&rtpof=true&sd=true"
@@ -43,6 +45,7 @@ export default function Home(){
         name = "SUNY New Paltz Traffic Camera"
         comp = "HTML, CSS, PHP, JS, MySQL,"
         desc = "People counting camera data and interface for library staff and students"
+        vid = {0}
         />
         <Projects 
         srcLink = "https://github.com/natewerm2000/ExerciseApp"
@@ -50,6 +53,7 @@ export default function Home(){
         name = "Universal Fitness"
         comp = "HTML, CSS, JS, Bulma, Vue.js, MongoDB"
         desc = "Fitness App, users can login, upload workouts, post on feed, view feed of other friends and add friends"
+        vid = {0}
         />
         
   
