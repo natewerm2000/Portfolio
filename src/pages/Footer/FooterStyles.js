@@ -2,7 +2,7 @@ import styled from 'styled-components';
    
 export const Box = styled.div`
   padding: 80px 60px;
-  background:  white;
+  background-color: whitesmoke;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,1);
   transition: 0.3s;
   position: absolute;

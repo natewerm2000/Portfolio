@@ -33,6 +33,8 @@
     background: #fff;
     transition: 0.5s;
     z-index:-1;
+    
+    background-color: whitesmoke;
   }
   .card1:before{
   transform: rotate(20deg);

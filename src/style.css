@@ -2,12 +2,17 @@
 
 *{
     box-sizing: border-box;
+    
+    
 }
 
 body{
     margin:0;
     place-items: center;
     margin-bottom: 400px;
+    
+    
+    
 }
 .boxTitle{
   text-decoration: none;
@@ -16,6 +21,9 @@ body{
   border-radius: 8px;
   background-color: rgb(128, 201, 246);
   box-shadow: 0 2px 2px lightgray;
+  
+  
+  
 }
 .cardNate{
     color: #201f1f;
@@ -24,6 +32,9 @@ body{
     margin-top: 80px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
+    
+    
+    
 }
 
 .nav{
@@ -36,11 +47,14 @@ body{
     padding:0 1rem;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
+    background-color: whitesmoke;
+    
 }
 .site-title{
     font-size: 2rem;
     
 }
+
 .site-title img{
  padding: 5px;
   width: 9rem;

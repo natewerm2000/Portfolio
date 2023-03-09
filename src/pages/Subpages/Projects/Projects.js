@@ -11,6 +11,23 @@ export default function Projects(props){
     if(props.vid === 1){
         var video = <YoutubeEmbed embedId={props.linkVid} />
     }
+    else{
+         video = 
+         <CCardText>
+         
+
+         <CCardImage src= {props.pic1} />
+            <CCardText>
+                {props.about1}
+            </CCardText>
+            <CCardText>
+                {props.about2}
+            </CCardText>
+            <CCardText>
+                {props.about3}
+            </CCardText>
+         </CCardText>
+    }
     return (
         <div>
             
