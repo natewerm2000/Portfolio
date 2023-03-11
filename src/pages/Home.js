@@ -8,6 +8,7 @@ import cam from "./Subpages/Projects/cam.jpg"
 import fitness from "./Subpages/Projects/fitness.png"
 import gauge from "./Subpages/Projects/gauge.png"
 import fitness1 from "./Subpages/Projects/fitnessIcon.png"
+import Aboutme from "./Subpages/About/Aboutme"
 //import Subprojects from "./Subpages/Projects/Subproject/Subproject"
 
 //import Social from "./Subpages/Social/Social"
@@ -73,7 +74,8 @@ export default function Home(){
         about3 = "This app contains profile management, data on users, static pages for general information, and a feed of your posts and those posts of who you follow"
         pic1 = {fitness1}
         />
-        
+        <h1>About me</h1>
+        <Aboutme/>
   
     
 
