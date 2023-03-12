@@ -90,13 +90,13 @@ I was born and raised in Poughkeepsie, New York.
 <div className="about">
 
 <div className="abtTxt">
-    At DCC, I was introduced to my first real programming language, Java. Which was definitely a rude awakening, but overtime this intimidating journey has become a lot easier.
+    At DCC, I was introduced to my first real programming language, Java. Which was definitely a rude awakening, but overtime this intimidating journey has become a lot easier and have grown fond of this field.
 </div>       
 </div>
 <div className="about">
 
 <div className="abtTxt">
-After graduating with my Associates Degree from Dutchess, I then transferred to SUNY New Paltz for my Bachelor's Degree which was achieved in Fall 2022.</div>       
+After graduating with my Associate's Degree from Dutchess, I then transferred to SUNY New Paltz for my Bachelor's Degree which was achieved in Fall 2022.</div>       
 </div>
                 
             </div>

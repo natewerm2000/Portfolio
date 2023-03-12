@@ -46,6 +46,7 @@ export default function Projects(props){
                 borderRadius: '4px',
                 textAlign: 'center',
                 padding: '20px'
+                
             }}>
                 <CCardTitle>
                 {props.name}

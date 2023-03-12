@@ -9,6 +9,8 @@ import fitness from "./Subpages/Projects/fitness.png"
 import gauge from "./Subpages/Projects/gauge.png"
 import fitness1 from "./Subpages/Projects/fitnessIcon.png"
 import Aboutme from "./Subpages/About/Aboutme"
+import logo from "./Footer/logo.png"
+
 //import Subprojects from "./Subpages/Projects/Subproject/Subproject"
 
 //import Social from "./Subpages/Social/Social"
@@ -24,13 +26,13 @@ export default function Home(){
         img = {np} 
         school = "SUNY New Paltz"
         year = "2021 - 2022"
-        deg = "Bachelor's in Science: Computer Science"
+        deg = "Bachelor Of Science: Computer Science"
         gpa = "3.67 GPA"/>
         <Education
         img = {dcc} 
         school = "Dutchess Community College"
         year = "2018 - 2020"
-        deg = "Associate's in Science: Computer Science"
+        deg = "Associate Of Science: Computer Science"
         gpa = "3.03 GPA"/>
 
 
@@ -38,6 +40,18 @@ export default function Home(){
 
         <h1>Projects</h1>
 
+        <Projects 
+        srcLink = "https://github.com/natewerm2000/Portfolio"
+        img = {logo} 
+        name = "Personal Portfolio"
+        comp = "React App"
+        desc = "Personal Portfolio for Nathaniel Alexander"
+        about1 = "Created with HTML, CSS, SCSS, JS/React"
+        about2 = "Basic Portfolio created in React, features education, jobs, projects and a small summary of myself."
+        about3 = "Provide information for viewers about this individual"
+        pic1 = {logo}
+        vid = {0}
+        />
 
         <Projects 
         srcLink = "https://github.com/zangaran1/GalacticConquestProject"
