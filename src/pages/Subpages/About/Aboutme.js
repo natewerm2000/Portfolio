@@ -4,7 +4,7 @@ import xc from './xc.png'
 import grad from './grad.JPG'
 import ReactCardFlip from "react-card-flip";
 
-import './Aboutme.scss'
+import './Aboutme.css'
 function calculate_age(dob) { 
     var diff_ms = Date.now() - dob.getTime();
     var age_dt = new Date(diff_ms); 

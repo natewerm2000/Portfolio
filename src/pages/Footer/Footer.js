@@ -34,7 +34,7 @@ const Footer = () => {
           <Column>
             
             <FooterLink href="https://www.linkedin.com/in/nathaniel-alexander-934188196/">
-            <FaLinkedin color =  "#ff0000" size = "57px" width = "100%"/>
+            <FaLinkedin  color =  "#ff0000" size = "57px" width = "100%"/>
             </FooterLink>
           </Column>
           <Column>
