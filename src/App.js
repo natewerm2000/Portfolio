@@ -9,6 +9,13 @@ import './style.css'
 
 
 function App() {
+
+
+
+ 
+
+
+
   let Component
   switch(window.location.pathname){
     case "/":

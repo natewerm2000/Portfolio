@@ -1,5 +1,10 @@
 
+@media screen and (max-width: 768px) {
+  .card1{
+    display:none;
+  }
   
+}
   .box{
     margin-top: 60px;
     margin-bottom: 60px;
