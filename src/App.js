@@ -34,6 +34,7 @@ function App() {
       <Component />
       </body>
       </div>
+      
       <Footer />
   </>
   )

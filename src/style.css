@@ -233,12 +233,12 @@ h1{
     width: 100%;
     font-size: 23px;
     text-align: center;
-                                 
+                        
   }
   .left
    {
    color: #000;
-   height: 400px;
+   height: 475px;
    width: 48%;
    float: left;
    
@@ -249,11 +249,10 @@ h1{
    .right
    {
    color: #000;
-   height: 400px;
+   height: 475px;
    width: 48%;
    float: right;
    
-
    }
   h2{
     color:#01257D;
@@ -270,6 +269,7 @@ h1{
   .collapsible .content {
     color: #00FFFF;
     background-color: #01257D;
+    
 }
 .collapsible .header {
     background-color: #01257D;
@@ -277,3 +277,4 @@ h1{
     color: #00FFFF;
     cursor: pointer;
 }
+.clear { clear: both; height: 60px; }

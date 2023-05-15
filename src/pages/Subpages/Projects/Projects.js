@@ -1,15 +1,17 @@
 
 import React from "react";
-
 import "./Projects.css"
 import {useCollapse} from 'react-collapsed';
-
+import fitness from "./fitness.png"
+import galactic from "./galactic.jpg"
+//import lib from "./gauge.png"
+import cam from "./cam.jpg"
 export default function Projects(props){
     const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
 
     return(
 
-<div className="border">\
+<div className="border">
 <h2>Projects</h2>
     <div className="collapsible">
         <div className="header" {...getToggleProps()}>
@@ -21,25 +23,27 @@ export default function Projects(props){
                 <h3>
                     Galactic Conquest
                 </h3>
-                Problem Solving
+                <img src={galactic} alt=""/>
+                <br>
+                </br>
+                Video game created in Unreal Engine 4
                 <br></br>
-                Active Thinker
+                C++/Blueprints
                 <br></br>
-                Self Teacher
+                Blender
                 <br></br>
                 Leadership
-                <br></br>
-                Ambitious
-                <br></br>
-                Fast learner
+                
             </div>
             <div className='right'>
                 <h3>
-                    Library Traffic
+                    Smart Library
                 </h3>
-                HTML
-                <br></br>
-                CSS/SCSS
+                <img src={cam} alt=""/>
+                <br>
+                </br>
+                SUNY New Paltz library traffic monitor
+                HTML, CSS/Bootstrap, Javascript, PHP, Python, MySQL, HikVision camera/application
                 <br></br>
                 Javascript
                 <br></br>
@@ -54,40 +58,25 @@ export default function Projects(props){
                 Python
             </div>
             <div className='right'>
+            
                 <h3>
-                    Library Traffic
+                    Universal Fitness
                 </h3>
-                HTML
+                <img src={fitness} alt=""/>
+                <br>
+                </br>
+                Exercise app made in vue.js
                 <br></br>
-                CSS/SCSS
-                <br></br>
-                Javascript
-                <br></br>
-                React
-                <br></br>
-                PHP
-                <br></br>
-                MySQL
-                <br></br>
-                Java
-                <br></br>
-                Python
+                HTML, CSS/Bulma, JavaScript, Vue.js, MongoDB
+                
             </div>
             <div className='left'>
                 <h3>
-                    Galactic Conquest
+                    Personal Portfolio
                 </h3>
-                Problem Solving
+                Portolio of Nathaniel Alexander
                 <br></br>
-                Active Thinker
-                <br></br>
-                Self Teacher
-                <br></br>
-                Leadership
-                <br></br>
-                Ambitious
-                <br></br>
-                Fast learner
+                HTML, SCSS, React
             </div>
             </div>
         </div>

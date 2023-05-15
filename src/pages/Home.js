@@ -22,7 +22,7 @@ export default function Home(){
         <Portrait />
         <Projects />
         <Education />
-        
+        <div class="clear"></div>
         
   
     
