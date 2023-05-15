@@ -1,9 +1,10 @@
 .footer--pin {
-    position: relative;
-    left: 0;
-    bottom: 0;
-    
-
+  position: relative;
+  margin-top: -180px;
+  /* negative value of footer height */
+  height: 180px;
+  clear: both;
+   
   }
   .content-container {
   min-height: calc(100vh - 34px);

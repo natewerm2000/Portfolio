@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.css"
 import {  FaGithub, FaLinkedin } from 'react-icons/fa';
-import logo from "./logo.png"
+//import logo from "./logo.png"
 //import { FaCode } from 'react-icons/fa';
 import {
   Box,
@@ -22,9 +22,7 @@ const Footer = () => {
                    marginTop: "-50px",
                    }}>
 
-            <FooterLink href="/home">
-              <img className = "footLogo" src = {logo} alt = ""/>
-            </FooterLink>
+            
       </h1>
 
       <Container>
@@ -34,7 +32,7 @@ const Footer = () => {
           <Column>
             
             <FooterLink href="https://www.linkedin.com/in/nathaniel-alexander-934188196/">
-            <FaLinkedin  color =  "#ff0000" size = "57px" width = "100%"/>
+            <FaLinkedin  color =  "#00FFFF" size = "57px" width = "100%"/>
             </FooterLink>
           </Column>
           <Column>
@@ -45,7 +43,7 @@ const Footer = () => {
           </Column>
           <Column>
             <FooterLink href="https://github.com/natewerm2000">
-            <FaGithub color =  "#ff0000" size = "57px"/>
+            <FaGithub color =  "#00FFFF" size = "57px"/>
             </FooterLink>
             
           </Column>

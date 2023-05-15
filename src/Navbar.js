@@ -12,15 +12,14 @@ export default function Navbar(){
     return (
         <nav className="navigation">
           
-            <div className="brand-name">
             
+            <a href="/home" className="brand-name">
             <button className="button">
 	                    Nathaniel Alexander
-	                <div className="button__horizontal"></div>
-	            <div className="button__vertical"></div>
+	                
             </button> 
+            </a>
             
-            </div>
         
           <button
             className="hamburger"
@@ -47,18 +46,29 @@ export default function Navbar(){
             }
           >
             <ul>
-              
-              
+            <li>
+              <a href="/home">
+            <button className="button">
+	                    Contact
+            </button> 
+            </a>
+              </li>
+              <li>
+              <a href="/home">
+            <button className="button">
+	                    About
+            </button> 
+            </a>
+              </li>
               <li>
               
             
             <a href={Pdf} target = "_blank"rel="noreferrer">
             <button className="button">
 	                    Resume
-	                
-	            <div className="button__vertical"></div>
             </button> 
             </a>
+            
             
               </li>
             </ul>

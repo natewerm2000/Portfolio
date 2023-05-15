@@ -1,103 +1,97 @@
 
-import { CCard, CCardBody, CCardImage, CCardText, CRow, CCol,CCardTitle } from '@coreui/react';
-import React, { useState } from "react";
-import ReactCardFlip from "react-card-flip";
-import YoutubeEmbed from '../Youtube/YoutubeEmbed';
+import React from "react";
+
 import "./Projects.css"
+import {useCollapse} from 'react-collapsed';
 
 export default function Projects(props){
-    const [flip, setFlip] = useState(false);
-     
-    if(props.vid === 1){
-        var video = <YoutubeEmbed embedId={props.linkVid} />
-    }
-    else{
-         video = 
-         <CCardText>
-         
+    const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
 
-         <CCardImage src= {props.pic1} />
-            <CCardText>
-                {props.about1}
-            </CCardText>
-            <CCardText>
-                {props.about2}
-            </CCardText>
-            <CCardText>
-                {props.about3}
-            </CCardText>
-         </CCardText>
-    }
-    return (
-        <div>
-            
-        <CRow>
-            <CCol sm={6}>
-                <CCard>
-                    
-                    <CCardBody>
-                        
-                    <ReactCardFlip isFlipped={flip} 
-            flipDirection="vertical">
-            <div style={{
-                minHeight:'600px',
-                fontSize: '40px',
-                margin: '20px',
-                borderRadius: '4px',
-                textAlign: 'center',
-                padding: '20px'
-                
-            }}>
-                <CCardTitle>
-                {props.name}
-                </CCardTitle>
-                <a href={props.srcLink}>
-                        <CCardImage src= {props.img} />
-                        </a>
-                        <CCardText>
-                                {props.comp}
-                            </CCardText>
-                            <CCardText>
-                                {props.desc}
-                            </CCardText>
-                <button style={{
-                    width: '150px',
-                    padding: '10px',
-                    fontSize: '20px',
-                    fontWeight: 'bold',
-                    borderRadius: '5px'
-                }} onClick={() => setFlip(!flip)}>
-                    More Info</button>
-            </div>
-            <div style={{
-                minHeight:'600px',
-                fontSize: '40px',
-                margin: '20px',
-                borderRadius: '4px',
-                textAlign: 'center',
-                padding: '20px'
-            }}>
-                <CCardTitle>
-                {props.name}
-                </CCardTitle>
-                <CCardText>
-               {video}              </CCardText>
-                <button style={{
-                    width: '150px',
-                    padding: '10px',
-                    fontSize: '20px',
-                    fontWeight: 'bold',
-                    borderRadius: '5px'
-                }} onClick={() => setFlip(!flip)}>
-                    Less Info</button>
-            </div>
-        </ReactCardFlip>
-                            
-                            
-                    </CCardBody>
-                </CCard>
-            </CCol>
-</CRow>
+    return(
+
+<div className="border">\
+<h2>Projects</h2>
+    <div className="collapsible">
+        <div className="header" {...getToggleProps()}>
+            {isExpanded ? 'Collapse' : 'Expand'}
         </div>
-    )
+        <div {...getCollapseProps()}>
+            <div className="content">
+            <div className='left'>
+                <h3>
+                    Galactic Conquest
+                </h3>
+                Problem Solving
+                <br></br>
+                Active Thinker
+                <br></br>
+                Self Teacher
+                <br></br>
+                Leadership
+                <br></br>
+                Ambitious
+                <br></br>
+                Fast learner
+            </div>
+            <div className='right'>
+                <h3>
+                    Library Traffic
+                </h3>
+                HTML
+                <br></br>
+                CSS/SCSS
+                <br></br>
+                Javascript
+                <br></br>
+                React
+                <br></br>
+                PHP
+                <br></br>
+                MySQL
+                <br></br>
+                Java
+                <br></br>
+                Python
+            </div>
+            <div className='right'>
+                <h3>
+                    Library Traffic
+                </h3>
+                HTML
+                <br></br>
+                CSS/SCSS
+                <br></br>
+                Javascript
+                <br></br>
+                React
+                <br></br>
+                PHP
+                <br></br>
+                MySQL
+                <br></br>
+                Java
+                <br></br>
+                Python
+            </div>
+            <div className='left'>
+                <h3>
+                    Galactic Conquest
+                </h3>
+                Problem Solving
+                <br></br>
+                Active Thinker
+                <br></br>
+                Self Teacher
+                <br></br>
+                Leadership
+                <br></br>
+                Ambitious
+                <br></br>
+                Fast learner
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    );
 }

@@ -2,7 +2,7 @@ import styled from 'styled-components';
    
 export const Box = styled.div`
   padding: 80px 60px;
-  background-color: whitesmoke;
+  background-color: #01257D;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,1);
   transition: 0.3s;
   position: absolute;
@@ -21,7 +21,7 @@ export const Container = styled.div`
     justify-content: center;
     max-width: 1000px;
     margin: 0 auto;
-    /* background: red; */
+    
 `
    
 export const Column = styled.div`
