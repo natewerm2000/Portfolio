@@ -5,7 +5,7 @@ import { useState } from "react";
 // import { faFacebook} from '@fortawesome/free-brands-svg-icons'
 //import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 //import { faAddressCard } from '@fortawesome/free-solid-svg-icons'
-import Pdf from "./images/resume.pdf";
+import Pdf from "./images/final_resume.pdf";
 
 export default function Navbar(){
     const [isNavExpanded, setIsNavExpanded] = useState(false)
@@ -47,18 +47,14 @@ export default function Navbar(){
           >
             <ul>
             <li>
-              <a href="/home">
+              <a href="/contact">
             <button className="button">
 	                    Contact
             </button> 
             </a>
               </li>
               <li>
-              <a href="/home">
-            <button className="button">
-	                    About
-            </button> 
-            </a>
+              
               </li>
               <li>
               

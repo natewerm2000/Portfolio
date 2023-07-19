@@ -235,6 +235,14 @@ h1{
     text-align: center;
                         
   }
+  .border1{
+    padding-top: 200px;
+    height: 400px;
+    width: 100%;
+    font-size: 23px;
+    text-align: center;
+                        
+  }
   .left
    {
    color: #000;
@@ -278,3 +286,8 @@ h1{
     cursor: pointer;
 }
 .clear { clear: both; height: 60px; }
+
+.subpic{
+  height: 175px;
+  width: 200px;
+}

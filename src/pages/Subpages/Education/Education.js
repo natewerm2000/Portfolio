@@ -1,4 +1,5 @@
-
+import np from "./np.jpg"
+import dcc from "./dcc.png"
 import React from "react";
 
 import {useCollapse} from 'react-collapsed';
@@ -20,37 +21,33 @@ export default function Education(props){
                 <h3>
                     SUNY New Paltz
                 </h3>
-                Problem Solving
+                <img className = "subpic" src={np} alt="new paltz"/>
+                <br>
+                </br>
+                Bachelor of Science
                 <br></br>
-                Active Thinker
+                Majoring in Computer Science
                 <br></br>
-                Self Teacher
+                2021-2022
                 <br></br>
-                Leadership
-                <br></br>
-                Ambitious
-                <br></br>
-                Fast learner
+                3.67 GPA
+                
             </div>
             <div className='right'>
                 <h3>
                     Dutchess Community College
                 </h3>
-                HTML
+                <img className = "subpic"src={dcc} alt="dcc"/>
+                <br>
+                </br>
+                Associate Of Science
                 <br></br>
-                CSS/SCSS
+                Majoring in Computer Science
                 <br></br>
-                Javascript
+                2018-2020
                 <br></br>
-                React
-                <br></br>
-                PHP
-                <br></br>
-                MySQL
-                <br></br>
-                Java
-                <br></br>
-                Python
+                3.03 GPA
+                
             </div>
             
             </div>
