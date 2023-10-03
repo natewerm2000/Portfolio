@@ -1,30 +1,25 @@
 
 import React from "react";
 import "./Projects.css"
-import {useCollapse} from 'react-collapsed';
 import fitness from "./fitness.png"
 import galactic from "./galactic.jpg"
 import logo from "./logo.png"
 //import lib from "./gauge.png"
 import cam from "./cam.jpg"
 export default function Projects(props){
-    const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
+   
 
     return(
 
 <div className="border">
 <h2>Projects</h2>
-    <div className="collapsible">
-        <div className="header" {...getToggleProps()}>
-            {isExpanded ? 'Collapse' : 'Expand'}
-        </div>
-        <div {...getCollapseProps()}>
+    
             <div className="content">
             <div className='left'>
                 <h3>
                     Galactic Conquest
                 </h3>
-                <a href="https://github.com/zangaran1/GalacticConquestProject" target="_blank" rel="noreferrer">
+                <a href="https://www.youtube.com/watch?v=gXRVlogzmfA" target="_blank" rel="noreferrer">
 
                 <img  className = "subpic" src={galactic} alt=""/>
                 </a>
@@ -80,7 +75,6 @@ export default function Projects(props){
             </div>
             </div>
         </div>
-    </div>
-    </div>
+   
     );
 }

@@ -2,20 +2,15 @@ import np from "./np.jpg"
 import dcc from "./dcc.png"
 import React from "react";
 
-import {useCollapse} from 'react-collapsed';
 
 export default function Education(props){
-    const { getCollapseProps, getToggleProps, isExpanded } = useCollapse();
 
     return(
 
 <div className="border">
 <h2>Education</h2>
-    <div className="collapsible">
-        <div className="header" {...getToggleProps()}>
-            {isExpanded ? 'Collapse' : 'Expand'}
-        </div>
-        <div {...getCollapseProps()}>
+    
+        
             <div className="content">
             <div className='left'>
                 <h3>
@@ -51,8 +46,15 @@ export default function Education(props){
             </div>
             
             </div>
+            <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">Mdwdwy work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+            
+            <div class="portfolio">
+                
+            </div>
+        </section>
         </div>
-    </div>
-    </div>
+  
     );
 }
